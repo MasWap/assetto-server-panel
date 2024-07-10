@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page avec Vidéo en Background</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="title">Ma Page</div>
+        <div class="buttons">
+            <a href="#home">Bouton 1</a>
+            <a href="#services">Bouton 2</a>
+            <a href="#contact">Bouton 3</a>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <h1>Créez votre propre serveur Assetto Corsa, en quelques clics !</h1>
+        <p>
+            Lancez-vous dans l'aventure de la course avec notre service d'hébergement. 
+            Depployez et configurez facilement votre serveur rapidement, pour des sessions entre amis. 
+            Profitez d'une expérience stable et personnalisée, le tout en un rien de temps. 
+            Alors qu’attends-tu ?
+        </p>
+        <button id="playButton">Cliquer ici</button>
+    </div>
+
+    <video id="bgVideo1" class="bg-video" muted>
+        <source src="background/jour-nuit-blur.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas les vidéos HTML5.
+    </video>
+    
+    <video id="bgVideo2" class="bg-video" muted style="display:none;">
+        <source src="background/nuit-jour-blur.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas les vidéos HTML5.
+    </video>
+
+    <script>
+    </script>
+</body>
+</html>
