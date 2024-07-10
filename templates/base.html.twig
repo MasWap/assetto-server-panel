@@ -1,0 +1,23 @@
+{# templates/base.html.twig #}
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Mon Application</title>
+		{% block stylesheets %}
+			{{ encore_entry_link_tags('styles') }}
+			{# Liens vers vos styles généraux #}
+		{% endblock %}
+	</head>
+	<body class="bg-gray-100">
+		{% block body %}
+			{# Contenu de votre page #}
+		{% endblock %}
+
+		{% block javascripts %}
+			{{ encore_entry_script_tags('app') }}
+			{# Scripts généraux #}
+		{% endblock %}
+	</body>
+</html>
